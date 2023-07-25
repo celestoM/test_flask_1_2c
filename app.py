@@ -26,7 +26,7 @@ def create():
 @app.route("/delete", methods=["DELETE"])
 def delete():
     leer=request.args.get("content")
-    if leer=="qut":
+    if leer=="qux":
         return {"payload":leer}
     else:
         return "Usuario No Existe"  
